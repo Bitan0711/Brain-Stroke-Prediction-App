@@ -8,6 +8,23 @@ st.set_page_config(
     layout="wide"
 )
 
+# Hide Streamlit menu and footer
+st.markdown("""
+<style>
+#MainMenu {
+    visibility: hidden;
+}
+
+footer {
+    visibility: hidden;
+}
+
+header {
+    visibility: hidden;
+}
+</style>
+""", unsafe_allow_html=True)
+
 # ── Custom CSS ──────────────────────────────────────────────────────────────
 st.markdown("""
 <style>
